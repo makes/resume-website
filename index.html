@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simo Mäkelä</title>
+  <meta name="description" content="Personal homepage.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <nav>
+    <a href="javascript:void(0);" id="menu-button" onclick="menuClick()">
+      <i class="icon fa fa-bars fa-2x"></i>
+    </a>
+    <div id="nav-links">
+      <a href="#degrees">Degrees</a>
+      <a href="#ongoing_studies">Ongoing Studies</a>
+      <a href="#language_skills">Language Skills</a>
+      <a href="#papers">Papers</a>
+      <a href="#profiles">Online Presence</a>
+      <!--a href="#video">Me at Work</a-->
+      <a href="cv.pdf"><strong>Résumé</strong></a>
+    </div>
+    <p id="valid-css-badge">
+      <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+      </a>
+    </p>
+  </nav>
+
+  <div id="content">
+    <header id="top">
+      <h1>Simo Mäkelä <span id="postnominal"><abbr title="Bachelor of Engineering">BEng</abbr>, <abbr title="Bachelor of Health Care">BHC</abbr>, <abbr title="Registered Nurse">RN</abbr></span></h1>
+      <p>
+      Paramedic, Central Uusimaa Rescue Department<br/>
+      Data Analyst, Hospital District of Helsinki and Uusimaa
+      </p>
+    </header>
+    <main>
+      <picture>
+        <source srcset="profile.jpg">
+        <img src="profile.jpg" alt="Photo">
+      </picture>
+      <section id="degrees">
+        <h2>Degrees</h2>
+
+        <h3>Metropolia UAS</h3>
+	<p>
+	Bachelor of Engineering, Health Technology: 2021<br/>
+        Bachelor of Health Care, Paramedic: 2018</p>
+
+        <h3>Vuosaaren lukio</h3>
+        <p>Matriculation: 2001</p>
+      </section>
+      <section id="ongoing_studies">
+        <h2>Ongoing Studies</h2>
+
+        <h3>University of Helsinki</h3>
+	<p>Master's Programme in Data Science, Master of Science</p>
+      </section>
+      <section id="language_skills">
+        <h2>Language Skills</h2>
+        <ul>
+          <li>Finnish: Native</li>
+          <li>English: Full working proficiency (<a href="https://en.wikipedia.org/wiki/ILR_scale" target="_blank">ILR
+              scale</a>)</li>
+          <li>Swedish: Limited working proficiency (<a href="https://en.wikipedia.org/wiki/ILR_scale"
+              target="_blank">ILR
+              scale</a>)</li>
+          <li>German: Elementary proficiency (<a href="https://en.wikipedia.org/wiki/ILR_scale" target="_blank">ILR
+              scale</a>)</li>
+        </ul>
+      </section>
+      <section id="papers">
+        <h2>Papers</h2>
+	<p>
+          <a href="https://urn.fi/URN:NBN:fi:amk-202102062002" target="_blank">
+            <span class="bib_authors"><span class="bib_self">Simo
+                Mäkelä</span>.</span>
+            <span class="bib_title">Applicability of Tissue Oximetry for Assessment of Cerebral Circulation in Prehospital Care</span>
+            <span class="bib_publisher">Metropolia University of Applied Sciences 2021.</span>
+          </a>
+        </p>
+        <p>
+          <a href="https://urn.fi/URN:NBN:fi:amk-2017111116900" target="_blank">
+            <span class="bib_authors">Laura Haapsaari, Emma Immonen, Mia Miettinen, <span class="bib_self">Simo
+                Mäkelä</span>.</span>
+            <span class="bib_title">Computerizing Self-Study of ECG Interpretation: A Survey into Methods and
+              Opportunities.</span>
+            <span class="bib_publisher">Metropolia University of Applied Sciences 2017.</span>
+          </a>
+	</p>
+      </section>
+      <section id="profiles">
+        <h2>Online Presence</h2>
+
+        <a href="https://github.com/makes" target="_blank">
+          <h3>GitHub</h3>
+          <p>makes</p>
+        </a>
+
+        <a href="https://stackoverflow.com/users/287954/makes" target="_blank">
+          <h3>Stack Overflow</h3>
+          <p>makes</p>
+        </a>
+
+        <a href="https://www.linkedin.com/in/makes/" target="_blank">
+          <h3>LinkedIn</h3>
+          <p>Simo Mäkelä</p>
+        </a>
+      </section>
+
+      <!--section id="video">
+        <h2>Me at Work</h2>
+        <video poster="video_poster.jpg" controls>
+          <source src="ambulanssi.webm" type="video/webm">
+          <source src="ambulanssi.mp4" type="video/mp4">
+          Your browser does not support embedded video.
+          You can download the video instead: <a href="ambulanssi.mp4">ambulanssi.mp4</a>.
+        </video>
+      </section-->
+    </main>
+  </div>
+
+</body>
+
+<script>
+  function menuClick() {
+    var x = document.getElementById("nav-links");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+</script>
+
+</html>

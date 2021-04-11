@@ -1,0 +1,215 @@
+body {
+    max-width: 720px;
+    background-image: url("grey_wash_wall.png")
+}
+
+abbr {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+/*************************************************************************
+ links
+/*************************************************************************/
+main a {
+    text-decoration: none;
+    color: #000;
+    background-color: transparent;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*************************************************************************
+ side nav 
+/*************************************************************************/
+nav {
+    height: 100%;
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    color: #818181;
+    background-color: #000;
+    opacity: 0.9; /* background image can be seen through black side nav */
+    text-align: right;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+div#content {
+    margin-left: 130px; /* same as side nav width */
+    padding-left: 10px;
+    overflow: auto;
+}
+
+#menu-button {
+    display: none;
+}
+
+@media only screen and (max-width: 500px) {
+    nav {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }    
+
+    div#content {
+        margin-left: 0; /* same as side nav width */
+        margin-top: 35px;
+    }
+
+    div#nav-links {
+        display: none;
+    }
+
+    #menu-button {
+        display: inline;
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+
+    p#valid-css-badge {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 501px) {
+    div#nav-links {
+        display: block !important;
+    }
+}
+
+nav a {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #818181;
+    background-color: transparent;
+    display: block;
+}
+
+nav strong {
+    color: #b7b7b7;
+    background-color: transparent;
+}
+
+/*************************************************************************
+ headings and paragraphs
+/*************************************************************************/
+h1, h2, h3, h4, p, ul {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+}
+
+h1 {
+    font-size: 26px;
+    color: #506984;
+    background-color: transparent;
+    font-weight: 700;
+    line-height: 26.4px;
+} 
+
+#postnominal {
+    font-size: 0.7em;
+    margin-left: 5px;
+}
+
+h2 {
+    font-size: 19px;
+    text-transform: uppercase;
+    color: #506984;
+    background-color: transparent;
+    font-weight: 400;
+    line-height: 15.4px;
+}
+
+h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 15.4px;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15.4px;
+}
+
+p, ul {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+picture {
+    position: relative;
+    float: right;
+    top: -50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media only screen and (max-width: 700px) {
+    picture {
+        display: block;
+        position: static;
+        float: none;
+        width: 100%;
+    }
+
+    img[alt="Photo"] {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    img[alt="Photo"] {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+}
+
+/*************************************************************************
+ video
+/*************************************************************************/
+video {
+    width: 100%;
+    height: auto;
+}
+
+/*************************************************************************
+ bibliography
+/*************************************************************************/
+.bib_authors {
+    color: #606060;
+    background-color: transparent;
+}
+
+.bib_self {
+    font-style: italic;
+    color: #000;
+    background-color: transparent;
+}
+
+.bib_title {
+    font-variant: small-caps;
+    color: #506984;
+    background-color: transparent;
+}
+
+.bib_publisher {
+    color: #606060;
+    background-color: transparent;
+}
